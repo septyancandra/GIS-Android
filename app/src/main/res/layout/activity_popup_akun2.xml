@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/size_20dp"
+    app:cardCornerRadius="@dimen/size_10dp"
+    android:elevation="@dimen/size_16dp"
+    android:layout_gravity="center"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/size_20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/size_12dp"
+            android:text="AKUN"/>
+
+        <LinearLayout
+            android:layout_below="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_akun"/>
+
+            <TextView
+                android:id="@+id/usernaama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama User"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size_12dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amaranth_italic"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama User"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size_4dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amaranth_italic"/>
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_logout"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/size_10dp"
+            app:cardCornerRadius="@dimen/size_12dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/size_12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_red_btn"
+                android:text="Logout"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:fontFamily="@font/amaranth_italic"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

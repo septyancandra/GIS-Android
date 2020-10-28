@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/size_12dp"
+            android:elevation="@dimen/size_12dp"
+            android:layout_margin="@dimen/size_12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ln_1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/border_red_setengah"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_daerah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/size_16dp"
+                    android:fontFamily="@font/amaranth_italic"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Id"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ln_1"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ln_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/ln_1"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Id"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:text="Tempat"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:text="Kota"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:text="Radius"/>
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/ln_2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="3"
+                android:orientation="vertical">
+
+                <!--<TextView
+                    android:id="@+id/id_daerah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreyLight"
+                    android:textStyle="bold"
+                    android:text="Id"/>-->
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGreyLight"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/size_2dp"
+                    android:text="nama"/>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreyLight"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/size_2dp"
+                    android:text="alamat"/>
+
+                <TextView
+                    android:id="@+id/radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGreyLight"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/size_2dp"
+
+                    android:text="Radius"/>
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
